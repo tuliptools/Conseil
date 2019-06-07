@@ -100,6 +100,7 @@ object TezosTypes {
     operations_hash: Option[String],
     fitness: Seq[String],
     context: String,
+    priority: Int,
     signature: Option[String]
   )
 

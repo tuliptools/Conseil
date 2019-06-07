@@ -11,6 +11,7 @@
 
     <logger name="com.base22" level="TRACE"/>
     <logger name="de.flapdoodle.embed.process" level="OFF"/>
+    <logger name="tech.cryptonomic.conseil" level="debug" />
 
     <root level="info">
         <appender-ref ref="STDOUT" />

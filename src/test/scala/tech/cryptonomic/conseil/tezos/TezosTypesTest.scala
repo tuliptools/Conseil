@@ -70,6 +70,7 @@ class TezosTypesTest extends WordSpec with Matchers with OptionValues {
           operations_hash = None,
           fitness = Seq.empty,
           context = "_",
+          priority = 0,
           signature = None),
         metadata = BlockHeaderMetadata(
           balance_updates = List.empty,

@@ -122,6 +122,7 @@ trait TezosDataGeneration extends RandomGenerationKit {
             operations_hash = None,
             fitness = Seq.empty,
             context = s"context$level",
+            priority = 0,
             signature = Some(s"sig${generateHash(10)}")
           ),
           metadata =
