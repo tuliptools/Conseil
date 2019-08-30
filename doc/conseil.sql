@@ -465,6 +465,18 @@ CREATE INDEX ix_operations_timestamp ON public.operations USING btree ("timestam
 
 CREATE INDEX ix_operations_delegate ON public.operations USING btree ("delegate");
 
+--
+-- Name: ix_rolls_block_id; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX ix_rolls_block_id ON public.rolls USING btree (block_id);
+
+--
+-- Name: ix_rolls_block_level; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX ix_rolls_block_level ON public.rolls USING btree (block_level);
+
 
 --
 -- Name: ix_proposals_protocol; Type: INDEX; Schema: public; Owner: -
