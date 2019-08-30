@@ -186,7 +186,14 @@ class TezosPlatformDiscoveryOperationsTest
           Some(
             List(
               Attribute("operation_id", "Operation id", DataType.Int, None, KeyType.UniqueKey, "operations"),
-              Attribute("operation_group_hash", "Operation group hash", DataType.String, None, KeyType.NonKey, "operations"),
+              Attribute(
+                "operation_group_hash",
+                "Operation group hash",
+                DataType.String,
+                None,
+                KeyType.NonKey,
+                "operations"
+              ),
               Attribute("kind", "Kind", DataType.String, None, KeyType.NonKey, "operations"),
               Attribute("level", "Level", DataType.Int, None, KeyType.NonKey, "operations"),
               Attribute("delegate", "Delegate", DataType.String, None, KeyType.UniqueKey, "operations"),
