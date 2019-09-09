@@ -1,3 +1,7 @@
+# forked!
+
+Forked for use in Tplus until https://github.com/Cryptonomic/Conseil/issues/533 is done.
+
 # Conseil
 Query API for the Tezos blockchain
 
