@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y apt-transport-https && echo "deb https:
     apt-get install -y sbt
 ADD . /src
 WORKDIR /src
+RUN rm -r ./src/test
 RUN adduser --disabled-password --gecos '' builduser && su builduser
 RUN sbt clean assembly -J-Xss32m
 
